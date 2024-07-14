@@ -11,7 +11,7 @@ body {
 
 main {
     flex: auto;
-    background-color: rgb(175, 175, 47);
+    background-color:rgb(246, 246, 235);
     padding:15px;
 }
 header {
@@ -22,11 +22,11 @@ header {
 
 }
 footer {
-    padding:1em;
+    padding:.5em;
 
 }
 button {
-    min-width: 40px;
+
     padding: .5em;
     margin-top: 5px;
     margin-left: 5px;
@@ -45,8 +45,7 @@ input {
 }
 
 .budget {
-    background-color: rgb(94, 240, 240);
-    height: 40px;
+    background-color: rgb(194, 245, 245);
     font-size: 20px;
     text-indent: 60%;
 
@@ -54,8 +53,8 @@ input {
 }
 .over-budget {
     background-color: red;
-    height: 40px;
     font-size: 30px;
+    text-indent: 50%;
 }
 
 #submitBtn {
@@ -85,8 +84,8 @@ th, td {
     min-width: 2.5em;
 }
 thead{
-    background: darkkhaki;
-    color:azure;
+    background: rgb(231, 225, 147);
+    color:rgb(20, 23, 23);
 }
 tbody tr:nth-child(odd) {
     background: whitesmoke;
