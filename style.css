@@ -1,0 +1,96 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    display: flexbox;
+    flex-direction: row;
+    border: 1px solid;
+    
+
+}
+
+main {
+    flex: auto;
+    background-color: rgb(175, 175, 47);
+    padding:15px;
+}
+header {
+    background-color: lightgray;
+    height: 5em;
+    text-align: center;
+    padding: 15px;
+
+}
+footer {
+    padding:1em;
+
+}
+button {
+    min-width: 40px;
+    padding: .5em;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 1px solid black;
+}
+
+input {
+    margin-top: 10px;
+    margin-left:15px;
+}
+
+#inputs {
+    height: 10em;
+    margin-left: 10px;
+
+}
+
+.budget {
+    background-color: rgb(94, 240, 240);
+    height: 40px;
+    font-size: 20px;
+    text-indent: 60%;
+
+    
+}
+.over-budget {
+    background-color: red;
+    height: 40px;
+    font-size: 30px;
+}
+
+#submitBtn {
+    margin-top: 10px;
+    margin-right: 20%;
+    text-align: right;
+}
+
+.data {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+table {
+    width: 90%;
+    text-align: left;  
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 2.15em;
+}
+th, td {
+    padding: .5em;
+    min-width: 2.5em;
+}
+thead{
+    background: darkkhaki;
+    color:azure;
+}
+tbody tr:nth-child(odd) {
+    background: whitesmoke;
+}
+tbody tr:nth-child(even) {
+    background:lightgoldenrodyellow;
+}
