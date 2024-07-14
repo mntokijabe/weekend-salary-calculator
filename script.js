@@ -1,8 +1,11 @@
 console.log('JS is running');
 let totalSalary = 0;
+let empList = [];
 
 function submitValues(event) {
-    console.log('in submit values');
+    
+    
+
     event.preventDefault();
     let newFirstName = document.getElementById('firstName').value;
     let newLastName = document.getElementById('lastName').value;
@@ -32,14 +35,16 @@ function submitValues(event) {
 }
 
 function removeEmpl(event){
+    let salaryChange = Number(event.target.parentElement.parentElement.children[4].innerText) * -1;
+    calcTotalSalary(salaryChange);
     event.target.parentElement.parentElement.remove()
 }
 
 function calcTotalSalary(amount){
     totalSalary = totalSalary + Math.round((amount)/12 *100)/100;
-    console.log(totalSalary);
+    let stringSalary = totalSalary.toLocaleString();
     document.getElementById('total').innerHTML =`
-    ${totalSalary}`
+    ${stringSalary}`
     if(totalSalary > 20000){
         document.querySelector('footer').classList = 'over-budget';
     }
