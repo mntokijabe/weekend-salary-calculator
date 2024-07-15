@@ -1,12 +1,10 @@
-
+/* CORE STRUCTURE */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 10px;
     display: flexbox;
     flex-direction: row;
     border: 1px solid;
-    
-
 }
 
 main {
@@ -19,11 +17,9 @@ header {
     height: 5em;
     text-align: center;
     padding: 15px;
-
 }
 footer {
-    padding:.5em;
-
+    padding: .5em;
 }
 button {
 
@@ -38,18 +34,28 @@ input {
     margin-left:15px;
 }
 
-#inputs {
-    height: 10em;
-    margin-left: 10px;
+/* CLASSES and IDS */
+.comments {
+    color:red;
+    font-size: .8em;
+    font-style: italic;
+    font-weight:bold;
+    margin: 15px;
+}
 
+.required {
+    color: red;
+    border: dashed 2px
+}
+#inputs {
+    height: auto;
+    margin-left: 10px;
 }
 
 .budget {
     background-color: rgb(194, 245, 245);
     font-size: 20px;
     text-indent: 60%;
-
-    
 }
 .over-budget {
     background-color: red;
@@ -64,11 +70,12 @@ input {
 }
 
 .data {
+    height: auto;
     margin-left: 2%;
     margin-right: 2%;
 }
 
-
+/* TABLE */
 table {
     width: 90%;
     text-align: left;  
